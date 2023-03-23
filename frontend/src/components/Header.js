@@ -5,15 +5,15 @@ const navbarStyle ={
     backgroundColor : 'lightblue'
 };
 
-const Header = ({ title }) => {
-    return (
-    <Navbar style = {navbarStyle} position = "fixed">
-        <Container>
-            <Navbar.Brand href="/">{title}</Navbar.Brand>
-        </Container>
-      
-  </Navbar>
-)
+function Header({title}){
+    return(
+        <Navbar style = {navbarStyle}>
+            <Container>
+                <Navbar.Brand href="/">{title}</Navbar.Brand>
+            </Container>
+        </Navbar>
+    )
 };
+
 
 export default Header;
